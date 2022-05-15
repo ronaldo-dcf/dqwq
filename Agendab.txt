@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string>
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+string nombre;
+string dato;
+
+cout<<"Digite el nombre: "; cin>>nombre;
+cout<<endl;
+cout<<"Digite el dato a buscar: "; cin>>dato;
+cout<<endl;
+
+char ca[nombre.length()];
+strcpy(ca,nombre.c_str());
+
+char ca1[dato.length()];
+strcpy(ca1,dato.c_str());
+for(int i=0;i<nombre.length();i++)
+{
+        if(ca[0] && ca[1]==ca1[i])
+    {
+        cout<<nombre;
+    }
+
+}
+return 0;
+}
